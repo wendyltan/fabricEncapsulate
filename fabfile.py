@@ -1,4 +1,6 @@
 from fabric.api import local,run,env,roles,execute,get,put,prompt,cd
+import hello as hl
+
 env.roledefs = {
 	'list_task':["wendi@192.168.1.101"]
 }
@@ -9,7 +11,7 @@ env.hosts = ["192.168.1.101"]
 env.user = 'wendi'
 env.password = '123wendi'
 def hello():
-	print "Hello Fabric!"
+	hl.hello()
 
 def test_exec_local():
 	local('echo "hello! man"')
