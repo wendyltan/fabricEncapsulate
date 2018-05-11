@@ -1,6 +1,5 @@
 # !user/bin/bash
 
-# must handle all module imported in fabfile.
 handle(){
 	
 	mkdir fabGen	
